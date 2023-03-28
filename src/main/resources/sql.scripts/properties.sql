@@ -1,0 +1,10 @@
+insert into properties (type, weight, height, fragile) values ('nulla elit', 15, 3, true);
+insert into properties (type, weight, height, fragile) values ('vestibulum velit id', 37, 3, true);
+insert into properties (type, weight, height, fragile) values ('vivamus in', 48, 2, true);
+insert into properties (type, weight, height, fragile) values ('felis eu sapien', 26, 3, true);
+insert into properties (type, weight, height, fragile) values ('porttitor', 38, 2, false);
+insert into properties (type, weight, height, fragile) values ('porttitor', 8, 2, false);
+insert into properties (type, weight, height, fragile) values ('eu magna', 34, 2, false);
+insert into properties (type, weight, height, fragile) values ('nulla elit ac', 12, 3, false);
+insert into properties (type, weight, height, fragile) values ('nec sem', 43, 3, true);
+insert into properties (type, weight, height, fragile) values ('eget', 5, 3, true);

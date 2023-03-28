@@ -1,0 +1,37 @@
+server:
+  port: 8072
+
+
+spring:
+  datasource:
+    username: postgres
+    password: root
+    url: jdbc:postgresql://localhost:8090/shop
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    generate-ddl: true
+  sql:
+    init:
+      data-locations:
+        classpath:sql.scripts/users.sql, classpath:sql.scripts/discount.sql, 
+        classpath:sql.scripts/companies.sql, classpath:sql.scripts/properties.sql, 
+        classpath:sql.scripts/goods.sql, classpath:sql.scripts/principle_groups.sql, 
+        classpath:sql.scripts/user_groups.sql, classpath:sql.scripts/acquiring_status.sql, 
+        classpath:sql.scripts/acquiring.sql, classpath:sql.scripts/tags.sql,
+        classpath:sql.scripts/tag2good.sql, classpath:sql.scripts/stocks.sql,
+        classpath:sql.scripts/stock2good.sql, classpath:sql.scripts/feedback.sql, 
+        classpath:sql.scripts/rating.sql, classpath:sql.scripts/status_movement_allowance.sql
+      mode: never
+
+
+
+
+
+springdoc:
+  swagger-ui:
+    path: /api/swagger-ui.html
