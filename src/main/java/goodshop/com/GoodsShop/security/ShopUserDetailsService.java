@@ -24,6 +24,7 @@ public class ShopUserDetailsService implements UserDetailsService {
             return new ShopUserDetails(user.get());
         }
         throw  new UsernameNotFoundException("user not found!");
+
     }
 
 
